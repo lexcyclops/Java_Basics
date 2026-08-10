@@ -11,13 +11,13 @@ public class Static {
         System.out.println(b);
 
         h.a=50;
-        h.b=100;
+        Static.b=100;
 
         h1.a=1000;
-        h1.b=2000;
+        Static.b=2000;
 
         System.out.println("h.a :"+h.a);
-        System.out.println("h1.b :"+h.b);
+        System.out.println("h1.b :"+Static.b);
 
 
     }
