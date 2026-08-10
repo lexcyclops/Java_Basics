@@ -17,7 +17,7 @@ public class Static {
         h1.b=2000;
 
         System.out.println("h.a :"+h.a);
-        System.out.println("h1.b :"+h1.b);
+        System.out.println("h1.b :"+h.b);
 
 
     }
