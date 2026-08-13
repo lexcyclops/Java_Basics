@@ -3,6 +3,6 @@ public class superMain {
         B s1=new B();
 
         s1.display();
-        s1.baseDisplay();
+        
     }
 }
