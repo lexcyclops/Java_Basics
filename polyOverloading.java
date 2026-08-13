@@ -1,6 +1,6 @@
 public class polyOverloading {
     public static void main(String [] args){
-        polySum s1=new polySum();
+        polymorphism s1=new polymorphism();
         s1.display();
         s1.display(34);
     }
