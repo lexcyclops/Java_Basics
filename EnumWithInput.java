@@ -1,3 +1,4 @@
+import java.security.InvalidAlgorithmParameterException;
 import java.util.Scanner; 
 
 enum Severity {
@@ -15,13 +16,18 @@ public class EnumWithInput{
         System.out.print("Enter Severity Level (LOW, MEDIUM, HIGH, CRITICAL): ");
         String input = scanner.nextLine().trim().toUpperCase();
 
-        if (input.equals("CRITICAL")) {
+        try{
+
+             Severity level=Severity.valueOf(input);
+
+        if (level==Severity.CRITICAL) {
             System.out.println("ALERT: Patch Immediately!");
-        } else if (input.equals("HIGH")) {
+        } else if (level==Severity.HIGH) {
             System.out.println("WARNING: Fix as soon as possible!");
-        } else if (input.equals("MEDIUM") || input.equals("LOW")) {
+        } else if (level==Severity.MEDIUM || level==Severity.LOW) {
             System.out.println("INFO: Low priority bug.");
-        } else {
+        }
+        } catch (IllegalArgumentException e){
 
             System.out.println("ERROR: Invalid Input! Please enter LOW, MEDIUM, HIGH, or CRITICAL.");
         }
