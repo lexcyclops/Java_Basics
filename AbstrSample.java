@@ -1,7 +1,9 @@
 public class AbstrSample extends Abstrclass {
     
-    void onText(String text){
+    void onText(String text){ 
+        
         System.out.println(text);
+        
     }
 
     AbstrSample(){
