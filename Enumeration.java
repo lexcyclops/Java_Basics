@@ -10,12 +10,17 @@ public class Enumeration{
         
         Severity myBug = Severity.LOW;
 
-        if (myBug == Severity.CRITICAL) {
+        switch(myBug) {
+            case CRITICAL:
             System.out.println("ALERT: Patch Immediately!");
-        } else if (myBug == Severity.HIGH) {
+            break;
+            case HIGH:
             System.out.println("WARNING: Fix as soon as possible!");
-        } else {
+            break;
+            case MEDIUM:
+            case LOW:
             System.out.println("INFO: Low priority bug.");
+            break;
         }
     }
 
