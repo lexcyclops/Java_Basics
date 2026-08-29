@@ -9,7 +9,6 @@ public class SamplePackage2 {
 
         h.display();
         SampleTest2 q=new SampleTest2();
-        q.display();
 
     }
 }
