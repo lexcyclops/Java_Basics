@@ -1,4 +1,4 @@
-enum Severity {
+enum version {
     LOW,
     MEDIUM,
     HIGH,
@@ -8,7 +8,7 @@ enum Severity {
 public class Enumeration{
     public static void main(String[] args) {
         
-        Severity myBug = Severity.LOW;
+        version myBug = version.LOW;
 
         switch(myBug) {
             case CRITICAL:
